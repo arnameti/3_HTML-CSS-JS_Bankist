@@ -1,0 +1,7 @@
+@use '../util' as u;
+
+.balance {
+  background-color: aqua;
+
+  grid-column: 1 / -1;
+}

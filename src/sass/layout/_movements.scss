@@ -1,0 +1,7 @@
+@use '../util' as u;
+
+.movements {
+  background-color: var(--clr-white);
+
+  grid-row: 2 / 5;
+}

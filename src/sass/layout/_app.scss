@@ -1,0 +1,17 @@
+@use '../util' as u;
+
+.app {
+  background-color: antiquewhite;
+  margin-inline: auto;
+  width: min(100%, u.rem(1000));
+  height: u.rem(660);
+
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: auto repeat(3, u.rem(150)) auto;
+  gap: u.rem(20);
+}
+
+.logout-timer {
+  background-color: gold;
+}

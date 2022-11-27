@@ -1,0 +1,15 @@
+@use '../util' as u;
+
+.operation {
+  &--transfer {
+    background-color: lightgreen;
+  }
+
+  &--loan {
+    background-color: cornflowerblue;
+  }
+
+  &--close {
+    background-color: lightcoral;
+  }
+}
