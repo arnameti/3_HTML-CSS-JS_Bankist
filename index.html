@@ -14,6 +14,32 @@
     <title>Bankist App</title>
   </head>
   <body>
-    <div class="container-body"></div>
+    <div class="container-body">
+      <nav class="nav">
+        <p class="welcome">
+          Welcome back,<span class="welcome__name"> Noli</span>
+        </p>
+        <div nav__logo-wrapper>
+          <img
+            class="nav__logo"
+            src="src/assets/logo.png"
+            alt="navigation_logo"
+          />
+        </div>
+        <form class="login">
+          <input
+            class="login__input login__input--user"
+            type="text"
+            placeholder="user"
+          />
+          <input
+            class="login__input login__input--user"
+            type="text"
+            placeholder="PIN"
+            maxlength="4"
+          />
+        </form>
+      </nav>
+    </div>
   </body>
 </html>
