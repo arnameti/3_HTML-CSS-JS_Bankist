@@ -1,0 +1,15 @@
+@use '../util' as u;
+
+.nav {
+  background-color: var(--clr-whitesmoke);
+  padding-inline: u.rem(20);
+
+  &__logo-wrapper {
+    width: u.rem(52);
+    height: auto;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
