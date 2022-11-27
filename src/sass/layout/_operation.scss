@@ -2,14 +2,14 @@
 
 .operation {
   &--transfer {
-    background-color: lightgreen;
+    background: linear-gradient(var(--clr-yellow), var(--clr-orange));
   }
 
   &--loan {
-    background-color: cornflowerblue;
+    background: linear-gradient(var(--clr-green-light), var(--clr-turqouise));
   }
 
   &--close {
-    background-color: lightcoral;
+    background: linear-gradient(var(--clr-red), var(--clr-red-orange));
   }
 }

@@ -54,11 +54,40 @@
         <!-- MOVEMENTS -->
         <div class="movements"></div>
         <!-- Summery -->
-        <div class="operation operation--close"></div>
-        <!-- Transfer -->
-        <div class="operation operation--transfer"></div>
+        <div class="operation operation--transfer">
+          <h2 class="heading-2">Transfer Money</h2>
+          <form class="form form--transfer">
+            <input type="text" class="form__input form__input--to" />
+            <input type="number" class="form__input form__input--amount" />
+            <button class="form__btn form__btn--transfer">&rarr;</button>
+            <label class="form__label">Transfer to</label>
+            <label class="form__label">Amount</label>
+          </form>
+        </div>
         <!-- Loan -->
-        <div class="operation operation--loan"></div>
+        <div class="operation operation--loan">
+          <h2 class="heading-2">Request loan</h2>
+          <form class="form form--loan">
+            <input class="form__input form__input--loan--amount"></input>
+            <button class="form__btn form__btn--loan">&rarr;</button>
+            <label class="form__label form__label--loan">Amount</label>
+          </form>
+        </div>
+        <!-- Close Account -->
+        <div class="operation operation--close">
+          <h2 class="heading-2">Close account</h2>
+          <form class="form form--close">
+            <input type="text" class="form__input form__input--user" />
+            <input
+              type="password"
+              maxlength="6"
+              class="form__input form__input--pin"
+            />
+            <button class="form__btn form__btn--close">&rarr;</button>
+            <label class="form__label">Confirm User</label>
+            <label class="form__label">Confirm Pin</label>
+          </form>
+        </div>
         <!-- Close -->
         <div class="summery"></div>
         <!-- Timer -->
