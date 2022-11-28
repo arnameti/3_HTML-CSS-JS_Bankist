@@ -1,4 +1,14 @@
+@use '../util' as u;
+
 .logout-timer {
   grid-column: 2 / 3;
   grid-row: 5 / 6;
+
+  text-align: right;
+  font-size: u.rem(16);
+  padding: 0 u.rem(3);
+}
+
+.timer {
+  font-weight: 600;
 }

@@ -1,8 +1,44 @@
 @use '../util' as u;
 
-.summery {
-  background-color: chartreuse;
-
+.summary {
   grid-column: 1 / 2;
   grid-row: 5 / 6;
+
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+
+  &__label {
+    font-size: u.rem(15);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: u.rem(7);
+  }
+
+  &__value {
+    font-size: u.rem(22);
+    margin-right: u.rem(25);
+
+    &--in {
+      color: var(--clr-green-light);
+    }
+
+    &--out {
+      color: var(--clr-red);
+    }
+
+    &--interest {
+      color: var(--clr-green-light);
+    }
+  }
+
+  &__btn {
+    margin-left: auto;
+    font-size: u.rem(16);
+    font-weight: 500;
+    cursor: pointer;
+    border-width: initial;
+    border-style: none;
+    background: none;
+  }
 }
