@@ -16,7 +16,7 @@
   <body>
     <div class="container-body">
       <!-- NAVIGATION -->
-      <nav class="nav mb-lg">
+      <nav class="nav mb-40">
         <p class="welcome">
           Welcome back,<span class="welcome__name"> Noli</span>
         </p>
@@ -54,8 +54,10 @@
         <!-- MOVEMENTS -->
         <div class="movements"></div>
         <!-- Summery -->
+
+        <!-- Transfer -->
         <div class="operation operation--transfer">
-          <h2 class="heading-2">Transfer Money</h2>
+          <h2 class="heading-2 mb-15">Transfer Money</h2>
           <form class="form form--transfer">
             <input type="text" class="form__input form__input--to" />
             <input type="number" class="form__input form__input--amount" />
@@ -64,18 +66,20 @@
             <label class="form__label">Amount</label>
           </form>
         </div>
+
         <!-- Loan -->
         <div class="operation operation--loan">
-          <h2 class="heading-2">Request loan</h2>
+          <h2 class="heading-2 mb-15">Request loan</h2>
           <form class="form form--loan">
-            <input class="form__input form__input--loan--amount"></input>
+            <input class="form__input form__input--loan-amount"></input>
             <button class="form__btn form__btn--loan">&rarr;</button>
             <label class="form__label form__label--loan">Amount</label>
           </form>
         </div>
+
         <!-- Close Account -->
         <div class="operation operation--close">
-          <h2 class="heading-2">Close account</h2>
+          <h2 class="heading-2 mb-15">Close account</h2>
           <form class="form form--close">
             <input type="text" class="form__input form__input--user" />
             <input
@@ -88,8 +92,10 @@
             <label class="form__label">Confirm Pin</label>
           </form>
         </div>
+
         <!-- Close -->
         <div class="summery"></div>
+        
         <!-- Timer -->
         <p class="logout-timer"></p>
       </main>

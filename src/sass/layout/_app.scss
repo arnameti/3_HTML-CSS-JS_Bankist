@@ -2,7 +2,9 @@
 
 .app {
   margin-inline: auto;
-  width: min(100%, u.rem(1000));
+  width: 100%;
+  max-width: u.rem(1000);
+  // width: min(100%, u.rem(1000));
   // height: u.rem(660);
 
   display: grid;

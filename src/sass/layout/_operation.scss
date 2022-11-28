@@ -1,15 +1,71 @@
 @use '../util' as u;
 
 .operation {
+  border-radius: u.rem(10);
+  padding: u.rem(30) u.rem(40);
+
   &--transfer {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
     background: linear-gradient(var(--clr-yellow), var(--clr-orange));
   }
 
   &--loan {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    grid-template-columns: 2.5fr 1fr 2.5fr;
+
     background: linear-gradient(var(--clr-green-light), var(--clr-turqouise));
   }
 
   &--close {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+
     background: linear-gradient(var(--clr-red), var(--clr-red-orange));
+  }
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 1fr;
+  grid-template-rows: auto auto;
+  gap: u.rem(4) u.rem(10);
+
+  &--loan {
+    grid-template-columns: 2.5fr 1fr 2.5fr;
+  }
+
+  &__label {
+    text-align: center;
+
+    &--loan {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    font-size: u.rem(15);
+    border-radius: u.rem(7);
+    padding: u.rem(7);
+    background-color: hsla(0, 0%, 95%, 0.5);
+    transition: all 0.2s;
+
+    &:focus {
+      background-color: hsla(0, 0%, 100%, 0.7);
+      outline: none;
+    }
+  }
+
+  &__btn {
+    border-radius: u.rem(7);
+    border: none;
+    font-size: u.rem(15);
+    background-color: var(--clr-white);
+    color: var(--clr-black);
   }
 }
