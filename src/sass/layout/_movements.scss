@@ -5,4 +5,29 @@
 
   grid-column: 1 / 2;
   grid-row: 2 / 5;
+
+  border-radius: u.rem(10);
+  overflow: scroll;
+
+  &__row {
+    padding: u.rem(25) u.rem(40);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(0, 0%, 93%);
+  }
+
+  &__type {
+    font-size: u.rem(13);
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--clr-white);
+    padding: u.rem(2) u.rem(10);
+    border-radius: u.rem(100);
+    background: linear-gradient(var(--clr-green-light), var(--clr-turqouise));
+  }
+
+  &__value {
+    font-size: u.rem(22);
+  }
 }
