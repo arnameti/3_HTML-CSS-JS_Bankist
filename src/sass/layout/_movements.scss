@@ -31,3 +31,11 @@
     font-size: u.rem(22);
   }
 }
+
+[data-movement-type='deposit'] {
+  background: linear-gradient(var(--clr-red), var(--clr-red-orange));
+}
+
+[data-movement-type='withdrawal'] {
+  background: linear-gradient(var(--clr-turqouise), var(--clr-green-light));
+}

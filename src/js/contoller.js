@@ -1,16 +1,18 @@
 import * as model from './model.js';
-import LogInView from './view/loginView.js';
+import logInView from './view/loginView.js';
+import movementsView from './view/movementsView.js';
 
 const controlLogIn = function (username, password) {
-  console.log('controller: ', username, password);
-  console.log('controller: ', typeof password);
-  console.log('controller: ', model.checkUserInputs(username, password));
+  model.findAcc(username, password);
 
-  if (model.checkUserInputs(username, password)) LogInView.showApp();
+  if (model.state.currentAcc.isTrue) {
+    logInView.showApp();
+    movementsView.render(model.state.currentAcc.movements);
+  }
 };
 
 const init = function () {
-  LogInView.getLoginInputs(controlLogIn);
+  logInView.getLoginInputs(controlLogIn);
 };
 
 init();

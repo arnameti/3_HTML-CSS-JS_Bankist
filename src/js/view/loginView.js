@@ -8,17 +8,18 @@ const LogInView = class {
   getLoginInputs(handler) {
     this._formLogInEl.addEventListener('submit', function (e) {
       e.preventDefault();
+
       const userNameInputEl = document.querySelector('[data-login="username"]');
       const passwordInputEl = document.querySelector('[data-login="password"]');
+
       this.username = userNameInputEl.value;
       this.password = +passwordInputEl.value;
 
-      console.log('View: ', this.username, this.password);
-      console.log('View: ', typeof this.password);
       handler(this.username, this.password);
 
-      userNameInputEl.textContent = '';
-      passwordInputEl.textContent = '';
+      userNameInputEl.value = '';
+      passwordInputEl.value = '';
+      userNameInputEl.focus();
     });
   }
 
