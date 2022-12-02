@@ -39,7 +39,6 @@ const SummaryView = class {
       <p class="summary__value summary__value--out">${totalOut * -1}Euro</p>
       <p class="summary__label">Interest</p>
       <p class="summary__value summary__value--interest">${interest}Euro</p>
-      <button class="summary__btn">&darr; Sort</button>
     `;
   }
 };

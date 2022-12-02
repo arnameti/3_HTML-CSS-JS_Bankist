@@ -52,18 +52,23 @@ const shortenName = name => {
     .toLowerCase();
 };
 
-const checkUserInputs = (username, password) => {
-  // prettier-ignore
-  return shortenName(state.currentAcc.owner) === username && 
-  state.currentAcc.pin === password
-};
-
 export const findAcc = (username, password) => {
   // find acc based on inputs and save it in the state
   state.currentAcc = state.accounts.find(
     acc => shortenName(acc.owner) === username && acc.pin === password
   );
+};
 
-  if (checkUserInputs(username, password)) state.currentAcc.isTrue = true;
-  else state.currentAcc.isTrue = false;
+export const checkUserInputs = (username, password) => {
+  // prettier-ignore
+  return shortenName(state.currentAcc.owner) === username && 
+    state.currentAcc.pin === password
+};
+
+export const sortMovements = function () {
+  state.currentAcc.sort = state.currentAcc.sort ? false : true;
+
+  return state.currentAcc.sort
+    ? state.currentAcc.movements.slice().sort((a, b) => b - a)
+    : state.currentAcc.movements;
 };
