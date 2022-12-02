@@ -2,7 +2,9 @@ export const state = {
   accounts: [
     {
       owner: 'Jonas Schmedtmann',
-      movements: [200, 455.23, -306.5, 25000, -642.21, -133.9, 79.97, 1300],
+      movements: [
+        200, 455.23, -306.5, 25000, -642.21, -133.9, 79.97, 1300, 500,
+      ],
       interestRate: 1.2, // %
       pin: 1111,
 
