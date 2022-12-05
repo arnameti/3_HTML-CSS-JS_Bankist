@@ -5,15 +5,19 @@ const TransferView = class {
     this.operationTranfer.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      const inputTransfer = document.querySelector('[data-transfer-input]');
-      const inputNumber = document.querySelector('[data-transfer-number]');
+      const inputTransferUser = document.querySelector(
+        '[data-transfer="username"]'
+      );
+      const inputTransferAmaount = document.querySelector(
+        '[data-transfer="amount"]'
+      );
 
-      handler(inputTransfer.value, inputNumber.value);
+      handler(inputTransferUser.value, inputTransferAmaount.value);
 
-      inputTransfer.value = '';
-      inputNumber.value = '';
+      inputTransferUser.value = '';
+      inputTransferAmaount.value = '';
 
-      inputTransfer.focus();
+      inputTransferUser.focus();
     });
   }
 };

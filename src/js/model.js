@@ -72,3 +72,16 @@ export const sortMovements = function () {
     ? state.currentAcc.movements.slice().sort((a, b) => b - a)
     : state.currentAcc.movements;
 };
+
+export const checkIfAccExists = function (username) {
+  return state.accounts.some(acc => shortenName(acc.owner) === username);
+};
+
+// prettier-ignore
+export const pushTransferAmountToMovements = function (username, amount) {
+  const index = state.accounts.findIndex(acc => shortenName(acc.owner) === username);
+
+  state.accounts[index].movements.push(amount);
+
+  console.log(state.accounts[index]);
+};

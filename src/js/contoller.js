@@ -21,8 +21,10 @@ const controlSort = function () {
   movementsView.render(model.sortMovements());
 };
 
-const controlTransfer = function (inputTransfer, inputNumber) {
-  console.log(inputTransfer, inputNumber);
+const controlTransfer = function (username, amount) {
+  if (model.checkIfAccExists(username)) {
+    model.pushTransferAmountToMovements(username, amount);
+  }
 };
 
 const init = function () {
