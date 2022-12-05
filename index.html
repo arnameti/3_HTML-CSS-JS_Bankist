@@ -65,9 +65,9 @@
         <!-- Transfer -->
         <div class="operation operation--transfer">
           <h2 class="heading-2 mb-15">Transfer Money</h2>
-          <form class="form form--transfer">
-            <input type="text" class="form__input form__input--to" />
-            <input type="number" class="form__input form__input--amount" />
+          <form class="form form--transfer" data-operation="transfer">
+            <input type="text" class="form__input form__input--to" data-transfer-input/>
+            <input type="number" class="form__input form__input--amount" data-transfer-number/>
             <button class="form__btn form__btn--transfer">&rarr;</button>
             <label class="form__label">Transfer to</label>
             <label class="form__label">Amount</label>
@@ -77,7 +77,7 @@
         <!-- Loan -->
         <div class="operation operation--loan">
           <h2 class="heading-2 mb-15">Request loan</h2>
-          <form class="form form--loan">
+          <form class="form form--loan" data-operation="loan">
             <input class="form__input form__input--loan-amount"></input>
             <button class="form__btn form__btn--loan">&rarr;</button>
             <label class="form__label form__label--loan">Amount</label>
@@ -87,7 +87,7 @@
         <!-- Close Account -->
         <div class="operation operation--close">
           <h2 class="heading-2 mb-15">Close account</h2>
-          <form class="form form--close">
+          <form class="form form--close" data-operation="close">
             <input type="text" class="form__input form__input--user" />
             <input
               type="password"

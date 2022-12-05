@@ -15,12 +15,12 @@ const MovementsView = class {
       .map((movement, index) => {
         // prettier-ignore
         return `
-      <div class="movements__row">
-        <div class="movements__type" data-movement-type = ${movement > 0 ? 'widhdrawal' : 'deposit'}> 
-        ${index + 1} ${movement > 0 ? 'withdrawal' : 'deposit'}
-        </div>
-        <div class="movements__value">${movement} Euro</div>
-      </div> 
+        <div class="movements__row">
+          <div class="movements__type" data-movement-type = ${movement > 0 ? 'widhdrawal' : 'deposit'}> 
+          ${index + 1} ${movement > 0 ? 'withdrawal' : 'deposit'}
+          </div>
+          <div class="movements__value">${movement} Euro</div>
+        </div> 
       `;
       })
       .join('');
